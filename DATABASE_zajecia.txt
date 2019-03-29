@@ -1,0 +1,37 @@
+USE test_1
+
+DROP DATABASE Sklep
+CREATE DATABASE Sklep
+USE Sklep
+
+
+CREATE TABLE Produkty
+(producent varchar NULL,
+model varchar PRIMARY KEY NOT NULL,
+typ nvarchar NULL)
+
+
+CREATE TABLE PC
+(model varchar PRIMARY KEY NOT NULL,
+procesor int NULL,
+ram int NULL,
+hdd int NULL,
+cd int NULL,
+ekran int NULL,
+cena money NULL)
+
+CREATE TABLE Laptop
+(model varchar PRIMARY KEY NOT NULL,
+procesor int NULL,
+ram int NULL,
+hdd int NULL,
+ekran int NULL,
+cena money NULL)
+
+ CREATE TABLE Drukarki
+(model varchar PRIMARY KEY NOT NULL,
+kolor bit NOT NULL,
+typ varchar NULL,
+cena money NULL)
+
+GO
